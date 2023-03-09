@@ -1063,9 +1063,9 @@ for(var attr in BUILDING_INIT){
 var BOX_INIT = {
     bag:{
         things:{
-            axe     :1,
-            water   :2,
-            bread   :2,
+            axe     :99,
+            water   :999,
+            bread   :999,
         },
         size:BAG_BASE_SIZE
     },
@@ -1106,7 +1106,7 @@ var BOX_INIT = {
     },
     well:{
         things:{
-            water:10,
+            water:999,
         },
         size:1,
         isDone:true,
