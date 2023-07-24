@@ -1064,9 +1064,9 @@ var BOX_INIT = {
     bag:{
         things:{
             axe     :999,
-            water   :999,
-            bread   :999,
-            gold    :999,
+            water   :9999,
+            bread   :9999,
+            gold    :9999,
         },
         size:BAG_BASE_SIZE
     },
