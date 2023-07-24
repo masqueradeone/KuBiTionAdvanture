@@ -1066,6 +1066,171 @@ var BOX_INIT = {
             axe     :99,
             water   :9999,
             bread   :9999,
+    foot:'足',
+    head:'头',
+    neck:'颈',
+}
+
+
+//游戏剧本初始化数据//////////////////////////////////////////////////////////////////////
+
+
+//建筑数据的初始化1
+var BUILDING_INIT = {
+    build:{
+        own:true
+    },
+    sleepPlace:{
+    },
+    bigBox:{
+    },
+    makeTable:{
+    },
+    alchemyTable:{
+    },
+    magicTable:{
+    },
+    scienceTable:{
+    },
+    trap:{
+        list:[
+        ],
+        size:2,
+        hint:false,
+    },
+    farm:{
+        list:[
+        ],
+        size:2,
+        hint:false,
+    },
+    alco:{
+        list:[
+        ],
+        size:2,
+        hint:false,
+    },
+    cooker:{
+    },
+    well:{
+    },
+    toilet:{
+    },
+}
+for(var attr in BUILDING_INIT){
+    if(BUILDING_INIT[attr].own == undefined){
+        BUILDING_INIT[attr].own = MODE=='DEBUG'?true : false;
+        // BUILDING_INIT[attr].own =  false;
+    }
+}
+物品初始化
+var BOX_INIT = {
+    bag:{
+        things:{
+            axe     :99,
+            water   :9999,
+            bread   :9999,
+            gold  
+        },
+        size:BAG_BASE_SIZE
+    },
+    makeTable:{
+        things:{
+        },
+        size:1,
+        isDone:true,
+    },
+    scienceTable:{
+        things:{
+        },
+        size:1000,
+        isDone:true,
+    },
+    alchemyTable:{
+        things:{
+        },    foot:'足',
+    head:'头',
+    neck:'颈',
+}
+
+
+//游戏剧本初始化数据//////////////////////////////////////////////////////////////////////
+
+
+//建筑数据的初始化1
+var BUILDING_INIT = {
+    build:{
+        own:true
+    },
+    sleepPlace:{
+    },
+    bigBox:{
+    },
+    makeTable:{
+    },
+    alchemyTable:{
+    },
+    magicTable:{
+    },
+    scienceTable:{
+    },
+    trap:{
+        list:[
+        ],
+        size:2,
+        hint:false,
+    },
+    farm:{
+        list:[
+        ],
+        size:2,
+        hint:false,
+    },
+    alco:{
+        list:[
+        ],
+        size:2,
+        hint:false,
+    },
+    cooker:{
+    },
+    well:{
+    },
+    toilet:{
+    },
+}
+for(var attr in BUILDING_INIT){
+    if(BUILDING_INIT[attr].own == undefined){
+        BUILDING_INIT[attr].own = MODE=='DEBUG'?true : false;
+        // BUILDING_INIT[attr].own =  false;
+    }
+}
+物品初始化
+var BOX_INIT = {
+    bag:{
+        things:{
+            axe     :999,
+            water   :9999,
+            bread   :9999,
+            gold    :9999,
+        },
+        size:BAG_BASE_SIZE
+    },
+    makeTable:{
+        things:{
+        },
+        size:1,
+        isDone:true,
+    },
+    scienceTable:{
+        things:{
+        },
+        size:1000,
+        isDone:true,
+    },
+    alchemyTable:{
+        things:{
+        },9
         },
         size:BAG_BASE_SIZE
     },
@@ -1191,19 +1356,19 @@ var PLAYER_STATE_INIT = {
         amount:0
     },
     hp:{
-        amount:100
+        amount:9999
     },
     full:{
-        amount:100
+        amount:9999
     },
     moist:{
-        amount:100
+        amount:9999
     },
     ps:{
-        amount:100
+        amount:9999
     },
     san:{
-        amount:100
+        amount:9999
     },
 }
 //道具耐久度初始化
