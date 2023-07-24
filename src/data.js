@@ -5,7 +5,7 @@ var MODE = 'RELEASE';
 var STOLE = 0.3;
 var STOLE_CHANCE = 0.05;
 var ROBBER_DAY = 10;
-var MAX_STATE = 9999;//所有状态的基础
+var MAX_STATE = 999;//所有状态的基础
 //宏变量
 
 var COOK_TIME_NEED = 0.5;
@@ -1066,6 +1066,175 @@ var BOX_INIT = {
             axe     :99,
             water   :9999,
             bread   :9999,
+    alchemyTable:{
+    },
+    magicTable:{
+    },
+    scienceTable:{
+    },
+    trap:{
+        list:[
+        ],
+        size:2,
+        hint:false,
+    },
+    farm:{
+        list:[
+        ],
+        size:2,
+        hint:false,
+    },
+    alco:{
+        list:[
+        ],
+        size:2,
+        hint:false,
+    },
+    cooker:{
+    },
+    well:{
+    },
+    toilet:{
+    },
+}
+for(var attr in BUILDING_INIT){
+    if(BUILDING_INIT[attr].own == undefined){
+        BUILDING_INIT[attr].own = MODE=='DEBUG'?true : false;
+        // BUILDING_INIT[attr].own =  false;
+    }
+}
+//物品初始化
+var BOX_INIT = {
+    bag:{
+        things:{
+            axe     :99,
+            water   :9999,
+            bread   :9999,
+            gold   
+    foot:'足',
+    head:'头',
+    neck:'颈',
+}
+
+
+
+
+//游戏剧本初始化数据//////////////////////////////////////////////////////////////////////
+
+
+
+
+Construction data initialization1
+var BUILDING_INIT = {
+    build: {
+        own: true
+    },
+    sleepPlace:{
+    },
+    bigBox:{
+    },
+    makeTable:{
+    },
+    alchemyTable:{
+    },
+    magicTable:{
+    },
+    scienceTable:{
+    },
+    trap:
+        list:[
+        ],
+        size: 2,
+        hint:false,
+    },
+    farm:
+        list:[
+        ],
+        size: 2,    alchemyTable:{
+    },
+    magicTable:{
+    },
+    scienceTable:{
+    },
+    trap:{
+        list:[
+        ],
+        size:2,
+        hint:false,
+    },
+    farm:{
+        list:[
+        ],
+        size:2,
+        hint:false,
+    },
+    alco:{
+        list:[
+        ],
+        size:2,
+        hint:false,
+    },
+    cooker:{
+    },
+    well:{
+    },
+    toilet:{
+    },
+}
+for(var attr in BUILDING_INIT){
+    if(BUILDING_INIT[attr].own == undefined){
+        BUILDING_INIT[attr].own = MODE=='DEBUG'?true : false;
+        // BUILDING_INIT[attr].own =  false;
+    }
+}
+//物品初始化
+var BOX_INIT = {
+    bag:{
+        things:{
+            axe     :99,
+            water   :9999,
+            bread   :9999,
+            gold  :9999, 
+    foot:'足',
+    head:'头',
+    neck:'颈',
+}
+
+
+
+
+//游戏剧本初始化数据//////////////////////////////////////////////////////////////////////
+
+
+
+
+Construction data initialization1
+var BUILDING_INIT = {
+    build: {
+        own: true
+    },
+    sleepPlace:{
+    },
+    bigBox:{
+    },
+    makeTable:{
+    },
+    alchemyTable:{
+    },
+    magicTable:{
+    },
+    scienceTable:{
+    },
+    trap:
+        list:[
+        ],
+        size: 2,
+        hint:false,
+    },
+    farm:
+        list:[
+        ],
+        size: 2,
     foot:'足',
     head:'头',
     neck:'颈',
@@ -1130,7 +1299,7 @@ var BOX_INIT = {
             axe     :99,
             water   :9999,
             bread   :9999,
-            gold  
+             gold  :9999, 
         },
         size:BAG_BASE_SIZE
     },
@@ -1356,19 +1525,19 @@ var PLAYER_STATE_INIT = {
         amount:0
     },
     hp:{
-        amount:9999
+        amount:999
     },
     full:{
-        amount:9999
+        amount:999
     },
     moist:{
-        amount:9999
+        amount:999
     },
     ps:{
-        amount:9999
+        amount:999
     },
     san:{
-        amount:9999
+        amount:999
     },
 }
 //道具耐久度初始化
