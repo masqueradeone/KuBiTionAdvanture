@@ -5,7 +5,7 @@ var MODE = 'RELEASE';
 var STOLE = 0.3;
 var STOLE_CHANCE = 0.05;
 var ROBBER_DAY = 10;
-var MAX_STATE = 100;//所有状态的基础
+var MAX_STATE = 9999;//所有状态的基础
 //宏变量
 
 var COOK_TIME_NEED = 0.5;
